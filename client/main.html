@@ -1,0 +1,94 @@
+
+
+<head>
+    <title>main</title>
+</head>
+
+<body>
+<!--<h1>Welcome to Meteor!</h1>-->
+
+
+{{>navigation}}
+
+{{> pixyViewAndPosition}}
+{{> SensorInformation}}
+{{> Auto}}
+
+<!--{{> hello}}-->
+<!--{{> info}}-->
+
+</body>
+
+<template name="navigation">
+    <div class="navBar">
+        <h1 class="title"> Lunacats Robotics</h1>
+    </div>
+</template>
+
+
+<template name="pixyViewAndPosition">
+    <div class="mainBox" style=" float:left;">
+        <h1>Pixy View</h1>
+        <div class="squareBox">
+            <div class="smallBox pixyViewBox">
+
+            </div>
+        </div>
+
+        <h3>Pixy Position</h3>
+        <p>X Position: 0in</p>
+        <p>Y Position: 0in</p>
+    </div>
+</template>
+
+<template name="SensorInformation">
+    <div class="mainBox" style=" float:right;">
+        <h1>Sensor Information</h1>
+        <h3>Lidar Distances</h3>
+        <ul>
+            <li>Lidar 1: 0in</li>
+            <li>Lidar 2: 0in</li>
+            <li>Lidar 3: 0in</li>
+            <li>Lidar 4: 0in</li>
+        </ul>
+
+        <h3>Encoder Distances</h3>
+        <ul>
+            <li>Encoder 1: 0in</li>
+            <li>Encoder 2: 0in</li>
+            <li>Encoder 3: 0in</li>
+            <li>Encoder 4: 0in</li>
+        </ul>
+
+
+
+    </div>
+</template>
+
+<template name="Auto">
+    <div class="mainBox" style=" float:right;">
+        <h2>Autonomous State</h2>
+        <p>Not Started</p>
+
+        <h2>Auto Options</h2>
+        <button>Start Auto</button>
+        <button>Stop Auto</button>
+    </div>
+</template>
+
+<template name="hello">
+    <div style="float: left">
+        <button>Click Me</button>
+        <p>You've pressed the button {{counter}} times.</p>
+    </div>
+</template>
+
+<template name="info">
+    <h2>Learn Meteor!</h2>
+    <ul>
+        <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
+        <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
+        <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
+        <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
+    </ul>
+</template>
